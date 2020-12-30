@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/rpc"
 
-	"github.com/bwangelme/ReadGo/server"
+	"github.com/bwangelme/RPCDemo/server"
 )
 
 func Main(num1, num2 int) {

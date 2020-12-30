@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 
-	"github.com/bwangelme/ReadGo/client"
+	"github.com/bwangelme/RPCDemo/client"
 
-	"github.com/bwangelme/ReadGo/server"
+	"github.com/bwangelme/RPCDemo/server"
 )
 
 var isServer = flag.Bool("server", false, "Is Running Server")
