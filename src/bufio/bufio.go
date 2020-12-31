@@ -18,6 +18,7 @@ const (
 	defaultBufSize = 4096
 )
 
+// 包错误变量的命名方式: `包名: 错误信息`
 var (
 	ErrInvalidUnreadByte = errors.New("bufio: invalid use of UnreadByte")
 	ErrInvalidUnreadRune = errors.New("bufio: invalid use of UnreadRune")
