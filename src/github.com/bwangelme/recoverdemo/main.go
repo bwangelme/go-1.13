@@ -17,6 +17,7 @@ func main() {
 
 // Revoer 仅仅定义在 defer 函数中才会生效，此时 revoer 会获取到panic 传递的值，并将程序的控制流程拉回到正常流程上来。
 // 如果在普通函数中执行 revoer，因为 panic 还没有发生，此时执行 recover 不会收到任何值。
+// 所以基础库应该提供一个 Go 函数，用于创建 Goroutine，里面自动 recover 所有 panic，参数可以通过闭包的方式传入进去
 func f() {
 	defer func() {
 		if r := recover(); r != nil {
